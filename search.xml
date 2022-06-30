@@ -30,8 +30,8 @@
     
     <entry>
       <title>Array &amp; List</title>
-      <link href="/2022/07/01/Array%20&amp;%20List%20/"/>
-      <url>/2022/07/01/Array%20&amp;%20List%20/</url>
+      <link href="/2022/07/01/Array%20&amp;%20List/"/>
+      <url>/2022/07/01/Array%20&amp;%20List/</url>
       
         <content type="html"><![CDATA[<ul><li><p>关系</p><ul><li><p>世间上本来没有集合,(只有数组参考C语言)但有人想要,所以有了集合  </p><ul><li>最基础的是array,所有的集合都是通过array实现的。</li><li></li></ul></li><li><p>例子：</p><ul><li>有人想有可以自动扩展的数组,所以有了List  </li><li>有的人想有没有重复的数组,所以有了set  </li><li>有人想有自动排序的组数,所以有了TreeSet,TreeList,Tree**</li></ul></li></ul></li></ul><h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><ul><li><p>List 优点：集合是对数组做的封装,所以,在代码中进行随机访问和存储，array的效率是最高的</p></li><li><p>Array 优点：比数组提供的功能要多  </p><ul><li>array是==固定==的，不能动态改变，且一个array只能存放==同一种数据类型==，可存放==引用类型/基本数据类型==；</li><li>List反之，可以存储和操作==不固定的一组数据==，但是只能存放==引用类型==的数据，不能放基本数据类型</li><li>数组是一种可读/可写数据结构，没有办法创建一个只读数组。然而可以使用==集合提供的ReadOnly==方法，以==只读==方式来使用集合。</li></ul></li><li><p>List集合的方法</p><ul><li>add(int index,E element)<ul><li>作用：<ul><li>用于==在列表的指定位置插入指定元素，并将当前处于该位置的元素及其后续元素的索引加1==</li></ul></li><li>参数说明: <ul><li>index: 用于指定在其中插入指定元素处的索引。</li><li>element:于指定要插入的元素。</li></ul></li><li>说明:索引值从0开始。</li></ul></li></ul></li></ul><h3 id="数组转换成集合"><a href="#数组转换成集合" class="headerlink" title="数组转换成集合"></a>数组转换成集合</h3><h5 id="Arrays-asList"><a href="#Arrays-asList" class="headerlink" title="Arrays.asList()"></a><code>Arrays.asList()</code></h5><ul><li><p>注意点</p><ul><li>转换后的集合，如果要使用 add/remove/clear ，那么会<code>java.lang.UnsupportedOperationException</code> 异常。</li><li>这个 ArrayList 类并非 java.util.ArrayList 类，而是 Arrays 类的静态内部类！</li></ul></li><li><p>需要增加删除操作</p><blockquote><p>List<waiterlevel> levelList = new ArrayList<waiterlevel>(Arrays.asList(“a”, “b”, “c”));</waiterlevel></waiterlevel></p></blockquote></li></ul>]]></content>
       
@@ -57,8 +57,8 @@
     
     <entry>
       <title>DAS HOFFE ICH</title>
-      <link href="/2022/07/01/DAS%20HOFFE%20ICH%20/"/>
-      <url>/2022/07/01/DAS%20HOFFE%20ICH%20/</url>
+      <link href="/2022/07/01/DAS%20HOFFE%20ICH/"/>
+      <url>/2022/07/01/DAS%20HOFFE%20ICH/</url>
       
         <content type="html"><![CDATA[<p>Und was willst du in deinem Leben erreichen </p><p>Was machst du Morgens gern </p><p>Wir konnten Morgens uns betrinken, wir waren total uberrascht</p><p>Wir gehen gern joggen und dusche hinterher es ist mein Leben, es war so langweilig </p><p>Ich denkt, dass es war letzte Nacht eine schöne Zeit</p><p>Ich bin Zwangzig Jahren lang echt wutend</p><p>Weil Erwachsene waren nicht auch mal jung</p><p>Er fragten mich, ob ich habe mal im Himmel gewohnt  </p><p>Ich ihm rede, dass ich habe einundzwangzig Jahren auf dich gewartet </p><p>Nein, ich wohne nicht im Himmel bis zu deinem Auftritt </p><p>Meine Zeele hat mir davon erzahlt, dass  </p><p>Wir sollten uns das sagen </p><p>Es musste sein </p><p>Und Eltern mussten vor zweiundzwangzig Jahren mir alles erzahlen  </p><p>Weil wir wollten nicht mitgehen, aber wir mussten </p><p>Weil wir konnten nicht wissen, aber wir mussten  </p><p>Weil wir sollten nicht ihn verstehen, baer wir mussten</p>]]></content>
       
@@ -125,25 +125,6 @@
     
     
     <entry>
-      <title>杀死一只知更鸟</title>
-      <link href="/2022/07/01/%E6%9D%80%E6%AD%BB/"/>
-      <url>/2022/07/01/%E6%9D%80%E6%AD%BB/</url>
-      
-        <content type="html"><![CDATA[<p> 1.民主不一定是好事，一旦一个群体形成了一种合意的偏见，民主就是促成偏见转变成欺压的工具。 </p><p>2.伪善的群落：人们倾向于与自己群落内的保持一种一致性，而不是思考事情本身的对与错。这样的一种道德观，其实质意义上就是非道德的，建立在这个基础上的正义感，其本身就是一种伪善。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 哲学家 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>位运算</title>
       <link href="/2022/07/01/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
       <url>/2022/07/01/%E4%BD%8D%E8%BF%90%E7%AE%97/</url>
@@ -163,6 +144,25 @@
             <tag> 位运算 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>杀死一只知更鸟</title>
+      <link href="/2022/07/01/%E6%9D%80%E6%AD%BB/"/>
+      <url>/2022/07/01/%E6%9D%80%E6%AD%BB/</url>
+      
+        <content type="html"><![CDATA[<p> 1.民主不一定是好事，一旦一个群体形成了一种合意的偏见，民主就是促成偏见转变成欺压的工具。 </p><p>2.伪善的群落：人们倾向于与自己群落内的保持一种一致性，而不是思考事情本身的对与错。这样的一种道德观，其实质意义上就是非道德的，建立在这个基础上的正义感，其本身就是一种伪善。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 哲学家 </category>
+          
+      </categories>
+      
       
     </entry>
     
