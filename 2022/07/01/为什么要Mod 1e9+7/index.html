@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <meta name="description" content="为什么要模1000000007（跟我念，一，八个零，七）。  大数相乘，大数的排列组合等为什么要取模 1000000007是一个质数（素数），对质数取余能最大程度避免结果冲突&#x2F;重复 int32位的最大值为2147483647，所以对于int32位来说1000000007足够大。 int64位的最大值为2^63-1，用最大值模1000000007的结果求平方，不会在int64中溢出。 所以在大数相乘">
+    <meta name="description" content="大数相乘，大数的排列组合等为什么要取模  1000000007是一个质数（素数），对质数取余能最大程度避免结果冲突&#x2F;重复 int32位的最大值为2147483647，所以对于int32位来说1000000007足够大。 int64位的最大值为2^63-1，用最大值模1000000007的结果求平方，不会在int64中溢出。 所以在大数相乘问题中，因为(a∗b)%c&#x3D;((a%c)∗(b%c))%c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="模1000000007">
 <meta property="og:url" content="http://example.com/2022/07/01/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81Mod%201e9+7/index.html">
 <meta property="og:site_name" content="Alien&#39;s Home">
-<meta property="og:description" content="为什么要模1000000007（跟我念，一，八个零，七）。  大数相乘，大数的排列组合等为什么要取模 1000000007是一个质数（素数），对质数取余能最大程度避免结果冲突&#x2F;重复 int32位的最大值为2147483647，所以对于int32位来说1000000007足够大。 int64位的最大值为2^63-1，用最大值模1000000007的结果求平方，不会在int64中溢出。 所以在大数相乘">
+<meta property="og:description" content="大数相乘，大数的排列组合等为什么要取模  1000000007是一个质数（素数），对质数取余能最大程度避免结果冲突&#x2F;重复 int32位的最大值为2147483647，所以对于int32位来说1000000007足够大。 int64位的最大值为2^63-1，用最大值模1000000007的结果求平方，不会在int64中溢出。 所以在大数相乘问题中，因为(a∗b)%c&#x3D;((a%c)∗(b%c))%c">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-06-30T17:27:04.000Z">
-<meta property="article:modified_time" content="2022-06-30T17:51:05.246Z">
+<meta property="article:modified_time" content="2022-07-01T05:43:27.847Z">
 <meta property="article:author" content="Blue Ginger">
 <meta name="twitter:card" content="summary">
     
@@ -78,8 +78,6 @@
         
         <li><a class="icon" aria-label="上一篇" href="/2022/07/01/%E6%9D%80%E6%AD%BB/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
-        
-        <li><a class="icon" aria-label="下一篇" href="/2022/07/01/%E8%8F%87%E8%8F%87%E4%B9%8B%E8%AF%97/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" aria-label="分享文章" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -151,26 +149,29 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>为什么要模1000000007（跟我念，一，八个零，七）。</p>
-<ol>
-<li>大数相乘，大数的排列组合等为什么要取模<ul>
+    <ol>
+<li><p>大数相乘，大数的排列组合等为什么要取模</p>
+<ul>
 <li>1000000007是一个质数（素数），对质数取余能最大程度避免结果冲突/重复</li>
 <li>int32位的最大值为2147483647，所以对于int32位来说1000000007足够大。</li>
 <li>int64位的最大值为2^63-1，用最大值模1000000007的结果求平方，不会在int64中溢出。</li>
 <li>所以在大数相乘问题中，因为(a∗b)%c=((a%c)∗(b%c))%c，所以相乘时两边都对1000000007取模，再保存在int64里面不会溢出。</li>
 </ul>
 </li>
-<li>这道题为什么要取模，取模前后的值不就变了吗？<ul>
+<li><p>这道题为什么要取模，取模前后的值不就变了吗？</p>
+<ul>
 <li>确实：取模前 f(43) = 701408733, f(44) = 1134903170, f(45) = 1836311903, 但是 f(46) &gt; 2147483647结果就溢出了。</li>
 <li>取模后 f(43) = 701408733, f(44) = 134903163 , f(45) = 836311896, f(46) = 971215059没有溢出。</li>
 <li>取模之后能够计算更多的情况，如 f(46)</li>
 <li>这道题的测试答案与取模后的结果一致。</li>
 </ul>
 </li>
-</ol>
+<li><p>总结一下：</p>
 <ul>
-<li>总结一下，这道题要模1000000007的根本原因是标准答案模了1000000007。不过大数情况下为了防止溢出，模1000000007是通用做法，原因见第一点。</li>
+<li>这道题要模1000000007的根本原因是标准答案模了1000000007。不过大数情况下为了防止溢出，模1000000007是通用做法，原因见第一点。</li>
 </ul>
+</li>
+</ol>
 
   </div>
 </article>
