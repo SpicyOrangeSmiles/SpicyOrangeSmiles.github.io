@@ -437,7 +437,7 @@ body td {
 @font-face {
   font-style: normal;
   font-family: "Meslo LG";
-  src: local("Meslo LG S"), url("../lib/meslo-LG/c.otf") format("truetype");
+  src: local("Meslo LG S"), url("../lib/meslo-LG/e1.otf") format("truetype");
 }
 @font-face {
   font-style: normal;
@@ -608,7 +608,7 @@ body {
   letter-spacing: 0.01em;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   line-height: 2rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -616,7 +616,7 @@ body {
 @font-face {
   font-style: normal;
   font-family: "Meslo LG";
-  src: local("Meslo LG S"), url("../lib/meslo-LG/e1.ttf") format("truetype");
+  src: local("Meslo LG S"), url("../lib/meslo-LG/i.otf") format("truetype");
 }
 #header a {
   background: none;
@@ -1064,7 +1064,7 @@ body {
   padding: 0;
 }
 .post-list .post-item {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   margin-left: 0;
   list-style-type: none;
 }
@@ -1073,7 +1073,7 @@ body {
   margin-right: 16px;
   min-width: 100px;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
 }
 @media (min-width: 480px) {
   .post-list .post-item {
@@ -1098,7 +1098,7 @@ article header .posttitle {
   margin-top: 0;
   margin-bottom: 0;
   text-transform: none;
-  font-size: 1.5em;
+  font-size: 3em;
   line-height: 1.25;
 }
 article header .meta {
@@ -1107,7 +1107,7 @@ article header .meta {
 }
 article header .meta * {
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
 }
 article header .author {
   text-transform: uppercase;
@@ -1124,11 +1124,11 @@ article .content h2:before {
   color: #b2ff59;
   content: "#";
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 article .content img,
 article .content video {
-  display: block;
+  display: auto;
   margin: auto;
   max-width: 100%;
   height: auto;
@@ -1159,6 +1159,7 @@ article .content blockquote {
 }
 article .content blockquote p {
   margin: 0;
+  font-size: 1.5em;
 }
 article .content blockquote:before {
   margin-right: 0.25em;
@@ -1204,7 +1205,7 @@ article .content .caption {
   margin-top: 0.5em;
   color: #fff;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1.5em;
 }
 .posttitle {
   text-transform: none;
@@ -1275,7 +1276,7 @@ article .content .caption {
   color: #fff;
   vertical-align: top;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
 }
 #footer ul {
   margin: 0;
@@ -1311,6 +1312,7 @@ article .content .caption {
   height: 20px;
   vertical-align: middle;
   line-height: 20px;
+  font-size: 17px;
 }
 @media (min-width: 39rem) {
   #footer {
