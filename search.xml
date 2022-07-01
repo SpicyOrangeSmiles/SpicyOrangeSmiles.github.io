@@ -75,31 +75,6 @@
     
     
     <entry>
-      <title>Hashmap &amp; LinkedHashMap</title>
-      <link href="/2022/07/01/Hashmap%20&amp;%20LinkedHashMap/"/>
-      <url>/2022/07/01/Hashmap%20&amp;%20LinkedHashMap/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hashmap"><a href="#Hashmap" class="headerlink" title="Hashmap"></a>Hashmap</h1><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li>HashMap里面存入的键值对在取出的时候是随机的,它根据键的HashCode值存储数据,根据键可以直接获取它的值，具有很快的访问速度。（TreeMap取出来的是排序后的键值对）</li><li>HashMap的底层是Array，所以HashMap在添加，查找，删除等方法上面速度会非常快</li></ul><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul><li><p>getOrDefault(K, V)</p><ul><li><p>运算：</p><ul><li>当Map集合中有这个key时，就使用这个key值；<br>如果没有就使用默认值defaultValue。</li></ul></li><li><p>目的：为了统计字符串中每种字符出现的频率</p></li><li><p>用法1：</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果在Map中存在key，则返回key所对应的的value。</span></span><br><span class="line"><span class="comment">//如果在Map中不存在key，则返回默认值。</span></span><br><span class="line">HashMap&lt;String, String&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">    map.put(<span class="string">"name"</span>, <span class="string">"cookie"</span>);</span><br><span class="line">    map.put(<span class="string">"age"</span>, <span class="string">"18"</span>);</span><br><span class="line">    map.put(<span class="string">"sex"</span>, <span class="string">"女"</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> map.getOrDefault(<span class="string">"name"</span>, <span class="string">"random"</span>);</span><br><span class="line">    System.out.println(name);<span class="comment">// cookie，map中存在name,获得name对应的value</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">score</span> <span class="operator">=</span> map.getOrDefault(<span class="string">"score"</span>, <span class="number">80</span>);</span><br><span class="line">    System.out.println(score);<span class="comment">// 80，map中不存在score,使用默认值80    </span></span><br></pre></td></tr></tbody></table></figure></li><li><p>用法拓展：</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//若没有就是0再加上1，有就直接加1</span></span><br><span class="line">hash.put(c,hash.getOrDefault(c,<span class="number">0</span>)+<span class="number">1</span>); </span><br></pre></td></tr></tbody></table></figure></li></ul></li><li><p>get()方法</p><ul><li>使用 key 获取value</li></ul></li><li><p>keySet() 方法</p><ul><li>返回所有 key 组成的 set 集合视图</li></ul></li></ul><h1 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h1><h2 id="当我们期待一个有序的Map，为什么不用HashMap？"><a href="#当我们期待一个有序的Map，为什么不用HashMap？" class="headerlink" title="当我们期待一个有序的Map，为什么不用HashMap？"></a>当我们期待一个有序的Map，为什么不用HashMap？</h2><ul><li>HashMap<ul><li>迭代HashMap的顺序并不是HashMap放置的顺序，也就是无序</li></ul></li><li>LinkedHashMap<ul><li>虽然增加了时间和空间上的开销，但是<strong>通过维护一个运行于所有条目的双向链表，LinkedHashMap保证了元素迭代的顺序</strong>。<strong>该迭代顺序可以是插入顺序或者是访问顺序。</strong></li></ul></li></ul><h2 id="LinkedHashMap的特点"><a href="#LinkedHashMap的特点" class="headerlink" title="LinkedHashMap的特点"></a>LinkedHashMap的特点</h2><ul><li><table><thead><tr><th><strong>关  注  点</strong></th><th><strong>结    论</strong></th></tr></thead><tbody><tr><td>LinkedHashMap是否允许空</td><td>Key和Value都允许空</td></tr><tr><td>LinkedHashMap是否允许重复数据</td><td>Key重复会覆盖、Value允许重复</td></tr><tr><td>LinkedHashMap是否有序</td><td><strong>有序</strong></td></tr><tr><td>LinkedHashMap是否线程安全</td><td>非线程安全</td></tr></tbody></table></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 哈希 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Sex Pistols - God Save The Queen</title>
       <link href="/2022/07/01/God%20Save%20The%20Queen/"/>
       <url>/2022/07/01/God%20Save%20The%20Queen/</url>
@@ -132,6 +107,31 @@
           
       </categories>
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hashmap &amp; LinkedHashMap</title>
+      <link href="/2022/07/01/Hashmap%20&amp;%20LinkedHashMap/"/>
+      <url>/2022/07/01/Hashmap%20&amp;%20LinkedHashMap/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hashmap"><a href="#Hashmap" class="headerlink" title="Hashmap"></a>Hashmap</h1><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li>HashMap里面存入的键值对在取出的时候是随机的,它根据键的HashCode值存储数据,根据键可以直接获取它的值，具有很快的访问速度。（TreeMap取出来的是排序后的键值对）</li><li>HashMap的底层是Array，所以HashMap在添加，查找，删除等方法上面速度会非常快</li></ul><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul><li><p>getOrDefault(K, V)</p><ul><li><p>运算：</p><ul><li>当Map集合中有这个key时，就使用这个key值；<br>如果没有就使用默认值defaultValue。</li></ul></li><li><p>目的：为了统计字符串中每种字符出现的频率</p></li><li><p>用法1：</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果在Map中存在key，则返回key所对应的的value。</span></span><br><span class="line"><span class="comment">//如果在Map中不存在key，则返回默认值。</span></span><br><span class="line">HashMap&lt;String, String&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">    map.put(<span class="string">"name"</span>, <span class="string">"cookie"</span>);</span><br><span class="line">    map.put(<span class="string">"age"</span>, <span class="string">"18"</span>);</span><br><span class="line">    map.put(<span class="string">"sex"</span>, <span class="string">"女"</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> map.getOrDefault(<span class="string">"name"</span>, <span class="string">"random"</span>);</span><br><span class="line">    System.out.println(name);<span class="comment">// cookie，map中存在name,获得name对应的value</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">score</span> <span class="operator">=</span> map.getOrDefault(<span class="string">"score"</span>, <span class="number">80</span>);</span><br><span class="line">    System.out.println(score);<span class="comment">// 80，map中不存在score,使用默认值80    </span></span><br></pre></td></tr></tbody></table></figure></li><li><p>用法拓展：</p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//若没有就是0再加上1，有就直接加1</span></span><br><span class="line">hash.put(c,hash.getOrDefault(c,<span class="number">0</span>)+<span class="number">1</span>); </span><br></pre></td></tr></tbody></table></figure></li></ul></li><li><p>get()方法</p><ul><li>使用 key 获取value</li></ul></li><li><p>keySet() 方法</p><ul><li>返回所有 key 组成的 set 集合视图</li></ul></li></ul><h1 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h1><h2 id="当我们期待一个有序的Map，为什么不用HashMap？"><a href="#当我们期待一个有序的Map，为什么不用HashMap？" class="headerlink" title="当我们期待一个有序的Map，为什么不用HashMap？"></a>当我们期待一个有序的Map，为什么不用HashMap？</h2><ul><li>HashMap<ul><li>迭代HashMap的顺序并不是HashMap放置的顺序，也就是无序</li></ul></li><li>LinkedHashMap<ul><li>虽然增加了时间和空间上的开销，但是<strong>通过维护一个运行于所有条目的双向链表，LinkedHashMap保证了元素迭代的顺序</strong>。<strong>该迭代顺序可以是插入顺序或者是访问顺序。</strong></li></ul></li></ul><h2 id="LinkedHashMap的特点"><a href="#LinkedHashMap的特点" class="headerlink" title="LinkedHashMap的特点"></a>LinkedHashMap的特点</h2><ul><li><table><thead><tr><th><strong>关  注  点</strong></th><th><strong>结    论</strong></th></tr></thead><tbody><tr><td>LinkedHashMap是否允许空</td><td>Key和Value都允许空</td></tr><tr><td>LinkedHashMap是否允许重复数据</td><td>Key重复会覆盖、Value允许重复</td></tr><tr><td>LinkedHashMap是否有序</td><td><strong>有序</strong></td></tr><tr><td>LinkedHashMap是否线程安全</td><td>非线程安全</td></tr></tbody></table></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 哈希 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -182,25 +182,6 @@
     
     
     <entry>
-      <title>杀死一只知更鸟</title>
-      <link href="/2022/07/01/%E6%9D%80%E6%AD%BB/"/>
-      <url>/2022/07/01/%E6%9D%80%E6%AD%BB/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p> 1.民主不一定是好事，一旦一个群体形成了一种合意的偏见，民主就是促成偏见转变成欺压的工具。 </p><p>2.伪善的群落：人们倾向于与自己群落内的保持一种一致性，而不是思考事情本身的对与错。这样的一种道德观，其实质意义上就是非道德的，建立在这个基础上的正义感，其本身就是一种伪善。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 哲学家 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>菇菇之诗</title>
       <link href="/2022/07/01/%E8%8F%87%E8%8F%87%E4%B9%8B%E8%AF%97/"/>
       <url>/2022/07/01/%E8%8F%87%E8%8F%87%E4%B9%8B%E8%AF%97/</url>
@@ -222,6 +203,25 @@
             <tag> 好吃 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>杀死一只知更鸟</title>
+      <link href="/2022/07/01/%E6%9D%80%E6%AD%BB/"/>
+      <url>/2022/07/01/%E6%9D%80%E6%AD%BB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p> 1.民主不一定是好事，一旦一个群体形成了一种合意的偏见，民主就是促成偏见转变成欺压的工具。 </p><p>2.伪善的群落：人们倾向于与自己群落内的保持一种一致性，而不是思考事情本身的对与错。这样的一种道德观，其实质意义上就是非道德的，建立在这个基础上的正义感，其本身就是一种伪善。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 哲学家 </category>
+          
+      </categories>
+      
       
     </entry>
     
